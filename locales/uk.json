@@ -1,4 +1,4 @@
-  
+
 {
     "Logo": "Логотип",
     "Close": "Закрити",
@@ -23,8 +23,8 @@
     "% Posts": "% Публікації",
     "This post was a collaboration between:": "Ця публікація була сумісною роботою:",
     "youremail@example.com": "вашаскринька@example.com",
-    "1 min read": "Час читання 1 хв",
-    "% min read": "Час читання % хв",
+    "1 min read": "Час читання 1 хв.",
+    "% min read": "Час читання % хв.",
     "Article": "Стаття",
     "Archive": "Архів",
     "Author": "Автор",
@@ -41,3 +41,4 @@
     "Sign in": "Увійти",
     "Sign up": "Зарееструватися"
 }
+

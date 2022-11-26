@@ -9,7 +9,7 @@
 $breakpoint-large: 960px;
 $breakpoint-medium: 640px;
 $breakpoint-small: 480px;
-$inner: calc(64rem + 8vw);
+$inner: calc(64rem + 28vw);
 /* ==========================================================================
    Basics
    ========================================================================== */
@@ -39,6 +39,10 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	overflow-x: hidden;
 	background: var(--color-background-main);
+
+	@media (max-width: $breakpoint-medium) {
+		font-size: 0.6em;
+	}
 }
 
 button,
@@ -51,6 +55,10 @@ textarea {
 .post-content {
 	font-size: 1.75em;
 	line-height: 2em;
+
+	@media (max-width: $breakpoint-medium) {
+		font-size: 2.4em;
+	}
 
 	a:not([class]) {
 		color: inherit;
@@ -1209,6 +1217,11 @@ textarea {
 		color: inherit;
 		transition: all ease-out 0.1s;
 
+		@media only screen and (max-width: $breakpoint-medium) {
+			font-size: 3em;
+		}
+		
+
 		i {
 			display: inline-block;
 			width: 4rem;
@@ -1340,6 +1353,7 @@ textarea {
 
 			@media only screen and (max-width: $breakpoint-medium) {
 				color: white;
+				font-size: 3em;
 			}
 		}
 	}
@@ -1782,9 +1796,10 @@ textarea {
 	text-indent: -1px;
 	color: var(--color-content-lead);
 
-	@media only screen and (max-width: $breakpoint-small) {
+	@media only screen and (max-width: $breakpoint-medium) {
 		-webkit-hyphens: auto;
 		hyphens: auto;
+		font-size: 3em;
 	}
 
 	a {
@@ -1798,6 +1813,10 @@ textarea {
 	margin: 0 0 4rem;
 	font-size: 6em;
 	line-height: 1.25em;
+
+	@media only screen and (max-width: $breakpoint-medium) {
+		font-size: 4em;
+	}
 }
 
 .has-cover .post-title {
@@ -1809,6 +1828,10 @@ textarea {
 	font-size: 1.6em;
 	line-height: 2rem;
 	color: var(--color-content-secondary);
+
+	@media only screen and (max-width: $breakpoint-medium) {
+		font-size: 2.4em;
+	}
 
 	a {
 		display: inline-block;
@@ -1896,11 +1919,26 @@ textarea {
 	}
 }
 
+.post-figcaption {
+	margin: 4rem 0 0;
+	font-style: italic;
+	font-size: 1.75em;
+	line-height: 2em;
+
+	@media only screen and (max-width: $breakpoint-medium) {
+		font-size: 2.4em;
+	}
+}
+
 .post-excerpt {
 	margin: 1em 0 0;
 	font-family: var(--font-secondary);
 	font-size: 1.75em;
 	line-height: 2em;
+
+	@media only screen and (max-width: $breakpoint-medium) {
+		font-size: 2.4em;
+	}
 }
 
 .post-content {
